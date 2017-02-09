@@ -1,11 +1,18 @@
 {
   "name": "drachtio-rtpengine-webrtcproxy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Webrtc proxy server built using drachtio (SIP Proxy) and rtpengine (RTP)",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "sip",
+    "drachtio",
+    "rtpengine",
+    "webrtc",
+    "webrtc proxy server"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davehorton/drachtio-rtpengine-webrtcproxy.git"
