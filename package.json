@@ -24,13 +24,12 @@
   },
   "homepage": "https://github.com/davehorton/drachtio-rtpengine-webrtcproxy#readme",
   "dependencies": {
-    "async": "^2.1.4",
-    "drachtio": "^1.0.8",
-    "drachtio-fsmrf": "^0.100.3",
+    "config": "^1.30.0",
     "drachtio-mw-registration-parser": "0.0.2",
-    "drachtio-srf": "^3.0.1",
+    "drachtio-srf": "^4.3.0",
     "lodash": "^4.17.2",
-    "bencode": "^0.11.0",
+    "pino": "^4.17.3",
+    "rtpengine-client": "0.0.6",
     "uuid": "^3.0.1"
   }
 }

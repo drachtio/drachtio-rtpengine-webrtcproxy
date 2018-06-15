@@ -1,10 +1,10 @@
 # drachtio-rtpengine-webrtcproxy
 
-Open-source webrtc proxy server built using [drachtio](https://github.com/davehorton/drachtio-server) (SIP Proxy) and [rtpengine](https://github.com/sipwise/rtpengine) (RTP proxy).
+Open-source webrtc proxy server built using [drachtio](https://drachtio.org) and [rtpengine](https://github.com/sipwise/rtpengine).
 
 ## Installation
 
-As mentioned above, the following are pre-requisites and should be installed first:
+As mentioned above, the following are pre-requisites and should be installed somewhere in your network:
 
 * [drachtio](https://github.com/davehorton/drachtio-server) 
 * [rtpengine](https://github.com/sipwise/rtpengine)
@@ -19,7 +19,7 @@ $ cd drachtio-rtpengine-webrtcproxy
 $ npm install
 ```
 
-Next, copy <code>config.json.example</code> to <code>config.json</code>, and edit to specify the coordinates of your drachtio server and rtpengine processes.
+Next, modify<code>config/default.json</code> as needed.
 
 Then fire it up!
 
