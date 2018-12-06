@@ -26,10 +26,9 @@
   "dependencies": {
     "config": "^1.30.0",
     "drachtio-mw-registration-parser": "0.0.2",
-    "drachtio-srf": "^4.3.0",
-    "lodash": "^4.17.2",
+    "drachtio-srf": "^4.4.1",
     "pino": "^4.17.3",
-    "rtpengine-client": "0.0.6",
+    "rtpengine-client": "0.0.7",
     "uuid": "^3.0.1"
   }
 }
