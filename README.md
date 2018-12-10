@@ -1,6 +1,6 @@
 # drachtio-rtpengine-webrtcproxy
 
-An open-source webrtc proxy server built using [drachtio](https://drachtio.org) and [rtpengine](https://github.com/sipwise/rtpengine) that allows VoxOUT customers to place outbound calls from webrtc clients.
+An open-source webrtc proxy server built using [drachtio](https://drachtio.org) and [rtpengine](https://github.com/sipwise/rtpengine) that allows webrtc clients to place or receive calls from their VoIP provider. The server can optionally be configured to handle authentication against SIP trunks requiring digest authentication (otherwise, digest challenges are passed back to the client).
 
 ## Installation
 
@@ -37,7 +37,7 @@ The example configuration file (in config/default.json.example) looks like this:
   },
   "credentials": [
     {
-      "trunk": "voxout.voxbone.com",
+      "trunk": "my.voipprovider.com",
       "auth": {
         "username": "<yourusername>",
         "password": "<yourpassword>"  
@@ -49,9 +49,7 @@ The example configuration file (in config/default.json.example) looks like this:
 The information is provided as follows:
 * `drachtio`: This is the location where the drachtio server is running and listening to connections from applications.  In the example, the application would be running on the drachtio server itself, and thus the 'host' value is '127.0.0.1'.  You could alternatively have the application running on a different server and connect to the drachtio server across the network, if you wish.
 * `rtpengine`: Similarly, this is the information needed for the application to connect to the rtpengine server, using the 'ng' protocol.
-* `credentials`: this is an array of SIP trunks that the webrtc proxy holds authorization credentials for, such that when an INVITE is being sent to that trunk and is subsequently challenged with a 401/407, the webrtc proxy will generate a new INVITE using the credentials provided.  
-
-In the case of the voxout service, as noted above you will need to substitute your voxout username and password where shown.  
+* `credentials`: this is an optionaly array of SIP trunks that the webrtc proxy holds authorization credentials for, such that when an INVITE is being sent to that trunk and is subsequently challenged with a 401/407, the webrtc proxy will generate a new INVITE using the credentials provided.  
 
 ## Basic operation
 
@@ -63,7 +61,7 @@ When an incoming SIP INVITE is received, the application will allocate endpoints
 
 If the host part of the Request-URI matches one of the configured trunks, the webrtc application will handle digest challenges from the far end.  
 
-Calls can be therefore be made to the PSTN (i.e. regular phone numbers) using voxout, or to any reachable SIP URI (e.g. an IP PBX).
+Calls can be therefore be made to the PSTN (i.e. regular phone numbers) using a VoIP carrier, or to any reachable SIP URI (e.g. an IP PBX).
 
 ## Advanced features
 

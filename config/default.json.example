@@ -11,7 +11,7 @@
   },
   "credentials": [
     {
-      "trunk": "voxout.voxbone.com",
+      "trunk": "your.voipprovider.com",
       "auth": {
         "username": "<yourusername>",
         "password": "<yourpassword>"  
