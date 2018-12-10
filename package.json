@@ -1,10 +1,14 @@
 {
   "name": "drachtio-rtpengine-webrtcproxy",
   "version": "0.1.1",
-  "description": "Webrtc proxy server built using drachtio (SIP Proxy) and rtpengine (RTP)",
+  "description": "Webrtc proxy server built using drachtio and rtpengine",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 6.9.3"
   },
   "keywords": [
     "sip",
@@ -15,21 +19,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davehorton/drachtio-rtpengine-webrtcproxy.git"
+    "url": "git+https://github.com/voxbone/drachtio-rtpengine-webrtcproxy.git"
   },
   "author": "Dave Horton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davehorton/drachtio-rtpengine-webrtcproxy/issues"
+    "url": "https://github.com/voxbone/drachtio-rtpengine-webrtcproxy/issues"
   },
-  "homepage": "https://github.com/davehorton/drachtio-rtpengine-webrtcproxy#readme",
+  "homepage": "https://github.com/voxbone/drachtio-rtpengine-webrtcproxy#readme",
   "dependencies": {
     "config": "^1.30.0",
     "drachtio-mw-registration-parser": "0.0.2",
-    "drachtio-srf": "^4.3.0",
-    "lodash": "^4.17.2",
+    "drachtio-srf": "^4.4.1",
     "pino": "^4.17.3",
-    "rtpengine-client": "0.0.6",
+    "rtpengine-client": "0.0.7",
     "uuid": "^3.0.1"
   }
 }
