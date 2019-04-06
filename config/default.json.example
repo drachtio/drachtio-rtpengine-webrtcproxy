@@ -17,5 +17,11 @@
         "password": "<yourpassword>"  
       }
     }
-  ]
+  ],
+  "options" : {
+    "multiple-registrations": true
+  },
+  "logging": {
+    "level": "debug"
+  }
 }
