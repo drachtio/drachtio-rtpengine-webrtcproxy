@@ -29,7 +29,7 @@
   "homepage": "https://github.com/voxbone/drachtio-rtpengine-webrtcproxy#readme",
   "dependencies": {
     "config": "^3.0.1",
-    "drachtio-fn-b2b-sugar": "0.0.2",
+    "drachtio-fn-b2b-sugar": "0.0.4",
     "drachtio-mw-registration-parser": "0.0.2",
     "drachtio-srf": "^4.4.5",
     "pino": "^4.17.3",
