@@ -43,13 +43,20 @@ The example configuration file (in config/default.json.example) looks like this:
         "password": "<yourpassword>"  
       }
     }
-  ]
+  ],
+  "options" : {
+  "multiple-registrations": true
+  },
+  "logging": {
+    "level": "debug"
+  }
 }
 ```
 The information is provided as follows:
 * `drachtio`: This is the location where the drachtio server is running and listening to connections from applications.  In the example, the application would be running on the drachtio server itself, and thus the 'host' value is '127.0.0.1'.  You could alternatively have the application running on a different server and connect to the drachtio server across the network, if you wish.
 * `rtpengine`: Similarly, this is the information needed for the application to connect to the rtpengine server, using the 'ng' protocol.
 * `credentials`: this is an optionaly array of SIP trunks that the webrtc proxy holds authorization credentials for, such that when an INVITE is being sent to that trunk and is subsequently challenged with a 401/407, the webrtc proxy will generate a new INVITE using the credentials provided.  
+* `multiple-registrations`: By default, only one registration per user is kept -- if a second registration for the same user is successfully processed, then all incoming calls will go to that user.  However, if this option is set to to `true` then multiple registrations per user are kept, and incoming calls are forked so that all registered endpoints will ring.
 
 ## Basic operation
 
