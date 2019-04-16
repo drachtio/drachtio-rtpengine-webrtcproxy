@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">= 6.9.3"
+    "node": ">= 8.10.0"
   },
   "keywords": [
     "sip",
@@ -28,11 +28,12 @@
   },
   "homepage": "https://github.com/voxbone/drachtio-rtpengine-webrtcproxy#readme",
   "dependencies": {
-    "config": "^1.30.0",
+    "config": "^3.0.1",
+    "drachtio-fn-b2b-sugar": "0.0.6",
     "drachtio-mw-registration-parser": "0.0.2",
-    "drachtio-srf": "^4.4.1",
+    "drachtio-srf": "^4.4.5",
     "pino": "^4.17.3",
-    "rtpengine-client": "0.0.7",
+    "rtpengine-client": "0.0.8",
     "uuid": "^3.0.1"
   }
 }
