@@ -13,13 +13,17 @@ const config = require('config') ;
 const Client = require('rtpengine-client').Client ;
 const rtpengine = new Client(config.get('rtpengine.local-port'));
 
-srf.connect(config.get('drachtio'))
+if (config.get('drachtio.mode') === 'outbound') {
+  srf.listen(config.get('drachtio'))
+} else {
+  srf.connect(config.get('drachtio'))
   .on('connect', (err, hostport) => {
     console.log(`connected to drachtio listening for SIP on hostport ${hostport}`) ;
   })
   .on('error', (err) => {
     console.error(`Error connecting to drachtio server: ${err.message}`) ;
   });
+}
 
 register.start(srf, registrar);
 subscriber.start(srf, registrar);
