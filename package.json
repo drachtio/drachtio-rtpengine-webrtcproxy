@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/voxbone/drachtio-rtpengine-webrtcproxy.git"
+    "url": "git+https://github.com/drachtio/drachtio-rtpengine-webrtcproxy.git"
   },
   "author": "Dave Horton",
   "license": "MIT",
