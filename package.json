@@ -30,9 +30,9 @@
   "dependencies": {
     "config": "^1.30.0",
     "drachtio-mw-registration-parser": "0.0.2",
-    "drachtio-srf": "^4.4.1",
-    "pino": "^4.17.3",
+    "drachtio-srf": "^4.4.45",
+    "pino": "^4.17.6",
     "rtpengine-client": "0.0.7",
-    "uuid": "^3.0.1"
+    "uuid": "^3.4.0"
   }
 }
