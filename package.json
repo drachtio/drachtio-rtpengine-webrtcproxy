@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jslint": "eslint lib"
   },
   "engines": {
     "node": ">= 6.9.3"
@@ -30,9 +31,13 @@
   "dependencies": {
     "config": "^1.30.0",
     "drachtio-mw-registration-parser": "0.0.2",
-    "drachtio-srf": "^4.4.45",
+    "drachtio-srf": "^4.4.47",
     "pino": "^4.17.6",
     "rtpengine-client": "0.0.7",
     "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-plugin-promise": "^4.2.1"
   }
 }
