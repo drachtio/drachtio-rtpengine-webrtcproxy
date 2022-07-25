@@ -5,9 +5,11 @@
     "secret": "cymru"
   }, 
   "rtpengine": {
-    "host": "127.0.0.1",
-    "port": 22222,
-    "local-port": 2223
+    "hostport": ["127.0.0.1:22222"],
+    "opts": {
+      "protocol": "udp",
+      "timeout": 2000
+    }
   },
   "credentials": [
     {

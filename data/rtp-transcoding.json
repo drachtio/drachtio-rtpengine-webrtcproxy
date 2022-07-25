@@ -1,0 +1,11 @@
+{
+  "transport protocol": "RTP/AVP",
+  "DTLS": "off",
+  "ICE": "remove",
+  "rtcp-mux": [
+    "demux"
+  ],
+  "flags": [
+    "SDES-no"
+  ]
+}
