@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/voxbone/drachtio-rtpengine-webrtcproxy#readme",
   "dependencies": {
-    "@jambonz/rtpengine-utils": "^0.3.1",
+    "@jambonz/rtpengine-utils": "^0.3.2",
     "config": "^3.3.7",
     "drachtio-fn-b2b-sugar": "0.0.12",
     "drachtio-mw-registration-parser": "0.0.2",
-    "drachtio-srf": "^4.5.13",
+    "drachtio-srf": "^4.5.17",
     "pino": "^4.17.6",
     "rtpengine-client": "^0.2.0",
     "uuid": "^3.4.0"
